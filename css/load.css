@@ -1,0 +1,424 @@
+
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#727171;
+}
+img{
+	border: none;
+	display:block;
+}
+em{
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* header */
+
+.header{
+	width: 1200px;
+	height: 71px;
+	margin: auto;
+	border-bottom: 1px solid #7a7f89;
+}
+
+.header .logo{
+	width: 1200px;
+	font-size: 12px;
+	color:black;
+	font-family: "Microsoft Yahei";
+	padding-top: 15px;
+}
+
+.logo a{
+	display: inline-block;
+}
+
+ .header .logo a:last-child{
+	float: right;
+	padding-top: 20px;
+}
+
+/* load */
+
+.wrapper{
+	width: 1200px;
+	height: 473px;
+	margin: 50px auto 10px;
+	border-bottom: 1px solid #7a7f89;
+}
+.title{
+	width: 100%;
+	height: 25px;
+}
+.title h3{
+	float: right;
+	font-size: 22px;
+	width: 400px;
+	height: 25px;
+	line-height: 25px;
+	color: #979797;
+	font-weight: bolder;
+	margin-right: 100px;
+	position: relative;
+	text-align: left;
+}
+
+.title h3 span{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.title h3 span a{
+	color: #b42025;
+}
+
+.login{
+	width:400px;
+	height: 409px;
+	float: right;
+	margin-top: 18px;
+	border: 1px solid #D1D1D1;
+	margin-bottom: 20px;
+	margin-right: 100px;
+}
+
+.tag{
+	width: 400px;
+	height: 35px;
+	border-bottom: 1px solid #cbcbcb;
+}
+
+.tag a{
+	display:inline-block;
+	width: 200px;
+	height: 35px;
+	text-align: center;
+	line-height:35px;
+	font-size: 14px;
+}
+
+.tag a:first-child{
+	float: left;
+	background-color: #b42025;
+	color: white;
+	font-weight: bolder;
+}
+
+.tag a:last-child{
+	float: left;
+	background-color: #f5f5f5;
+	color: #656565;
+}
+
+.user_infor{
+	width: 415px;
+	height: 238px;
+	padding: 10px 20px 10px;
+	
+}
+
+.tips{
+	clear: both;
+	margin-left: 48px;
+	width: 220px;
+	color: #A10000;
+	text-indent: 30px;
+	background-color: #FFF6F7;
+	border: 1px solid #CC9998;
+	height: 16px;
+	font-size: 14px;
+	display: none;
+
+}
+
+.newUser{
+	height: 63px;
+	width: 360px;
+	position: relative;
+}
+
+.name,.pwd{
+	margin-bottom: 18px;
+}
+
+
+.newUser input{
+	height: 41px;
+	line-height: 45px;
+	color: #656565;
+	width: 98%;
+	display: block;
+	text-align: left;
+	text-indent: 10px;
+	font-size: 14px;
+	z-index:9;
+	position: absolute;
+	left: 0;
+	top: 18px;
+}
+
+.bt{
+	margin-top: 10px;
+	width: 360px;
+	
+}
+
+.bt a{
+	display: block;
+}
+
+.bt a:first-child{
+	text-align: right;
+	color: #b42025;
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.bt a:last-child{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #b42025;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+/* 快速 */
+
+.speed{
+	display: none;
+}
+.phone{
+	height:45px;
+	margin-bottom: 17px;
+	margin-top: 20px;
+}
+.newtxt{
+	height: 45px;
+	position: relative;
+	overflow: hidden;
+	width: 250px;
+	float: left;
+}
+
+.newtxt input{
+	height: 40px;
+	line-height: 45px;
+	color: #656565;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 98%;
+	display: block;
+	text-align: left;
+	text-indent: 10px;
+	z-index: 9;
+	font-size: 14px;
+}
+
+.phone a{
+	width: 97px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	background: #f5f5f5;
+	color: #b52024!important;
+	border: solid 1px #cbcbcb;
+	display: block;
+	float: left;
+	margin: 0 0 0 10px;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+
+.yanzhenma{
+	height: 45px;
+	width: 360px;
+	border: 0 none;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+/* .yanzhenma label{
+	width: 142px;
+	height: 43px;
+	line-height: 43px;
+	border: 1px solid rgb(203, 203, 203);
+	z-index: 10;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+} */
+
+.yanzhenma input{
+	width: 142px;
+	height: 43px;
+	line-height: 43px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border: solid 1px #cbcbcb
+}
+
+
+.yanzhenma p{
+	vertical-align: middle;
+	text-align: center;
+	line-height:42px;
+	width: 119px;
+	height: 42px;
+	position: absolute;
+	top: 0;
+	left: 148px;
+	border: solid 1px #cbcbcb;
+}
+.yanzhenma a{
+	float: right;
+	font-size:12px ;
+}
+
+.yanzhenma a:hover{
+	color: #b52024;
+	text-decoration: underline;
+}
+
+
+.newUser .haha{
+	top:0;
+}
+
+
+.eroll{
+	width: 100%;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	background: #b42025;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.lines{
+	border-bottom: dotted 1px #909090;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	margin: 20px 0 0 0;
+}
+
+
+.glup{
+	width: 360px;
+	margin: 10px auto;
+	height: 76px;
+}
+
+.glup h2{
+	padding-top: 10px;
+	color: #a4a4a4;
+	line-height: 14px;
+	font-size: 14px;
+	font-weight: bolder;
+	padding-bottom: 10px;
+}
+.footernav a{
+	width: 33px;
+	height: 33px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/logos.jpg) no-repeat left center;
+}
+
+.footernav a:nth-child(2){
+	background: url(../img/logos.jpg) no-repeat -146px 0;
+}
+.footernav a:nth-child(3){
+	background: url(../img/logos.jpg) no-repeat -48px 0;
+}
+.footernav a:nth-child(4){
+	background: url(../img/logos.jpg) no-repeat -189px 0;
+}
+.footernav a:nth-child(5){
+	background: url(../img/logos.jpg) no-repeat -228px 0;
+}
+.footernav a:last-child{
+	background: url(../img/logos.jpg) no-repeat -93px 0;
+	width: 36px;
+}
+
+.advert{
+	float: left;
+	width: auto;
+	height: auto;
+	/* +margin-bottom: -3px; */
+	margin: 18px 0 0 150px;
+	/* +margin: 18px 0 -3px 150px; */
+}
+
+
+
+/* footer */
+
+.footer{
+	width: 980px;
+	height: 103px;
+	margin:30px auto 0;
+}
+
+.footer p{
+	text-align: center;
+	font-size: 12px;
+	font-family: "宋体";
+	color: #999999;
+	padding-bottom: 20px;
+}
+
+.footer .footerLogo{
+	margin: auto;
+	width: 601px;
+	height: 42px;
+}
+
+.footerLogo a{
+	display: inline-block;
+	text-align: center;
+	float: left;
+	width:113px;
+	height: 42px;
+	background: url(../img/hahaha.png) no-repeat 0 -400px transparent;
+	margin: 0 10px;
+}
+
+.footerLogo a:nth-child(2){
+	background: url(../img/hahaha.png) no-repeat 0 -448px transparent;
+	width: 156px;
+}
+
+.footerLogo a:nth-child(3){
+	background: url(../img/hahaha.png) no-repeat 0 -494px transparent;
+	width:96px;
+}
+
+.footerLogo a:nth-child(4){
+	background: url(../img/hahaha.png) no-repeat -97px -494px transparent;
+	width: 156px;
+}

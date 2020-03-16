@@ -1,0 +1,943 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#727171;
+}
+img{
+	border: none;
+	display:block;
+}
+em{
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* header */
+.vanclHead{
+	width: 100%;
+	height:167px;
+	padding-bottom: 30px;
+}
+.headertoparea{
+	width: 100%;
+	height: 30px;
+	background-color: #f7f7f7;
+	border-bottom:1px solid #ccc ;
+}
+.headerTop{
+	width: 1200px;
+	height:30px;
+	margin: auto;
+	border-bottom:1px solid #ccc ;
+}
+
+.headerTop a{
+	font-size: 12px;
+	font-family: "宋体";
+	color:#808080;
+}
+
+.headerTop a:hover{
+	color:#a10000;
+}
+
+.headerTopright{
+	width: 126px;
+	height: 30px;
+	float: right;
+}
+
+.headerTopright a{
+	display: inline-block;
+}
+
+.headerTopright .mapDropTitle{
+	width: 81px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 25px;
+	background-color: #008000;
+	background: url(../img/notice.png) no-repeat 0 6px;
+	float: left;
+}
+
+.headerTopright .weixin,.weibo{
+	float: left;
+	width: 18px;
+	height: 18px;
+	padding-top: 6px;
+	/* overflow: hidden; */
+}
+
+.headerTopright .weixin{
+	margin-right: 1px;
+	position: relative;
+}
+
+
+.headerTopright .weixin .weixinTip{
+	width: 148px;
+	height:169px;
+	position: absolute;
+	right: -16px;
+	top:30px;
+	background-image: url(../img/weixin.png);
+	display: none;
+	z-index: 10;
+}
+
+.headerTopright .weixin:hover .weixinTip{
+	display: block;
+	
+}
+
+
+.headerTopleft{
+	width: 312px;
+	height:30px ;
+	float: right;
+	color:#808080;
+	font-size: 12px;
+	line-height: 30px;
+	font-family: "宋体";
+}
+
+.headerTopleft a:nth-child(3){
+	margin-right: 10px;
+}
+
+
+
+.vanclLogoSearch{
+	width:1200px;
+	height: 62px;
+	margin:20px auto 0;
+}
+.vanclSearch{
+	float: right;
+	padding-top: 8px;
+	width: 438px;
+}
+.search1{
+	width: 438px;
+	height: 29px;
+}
+.vanclSearch .searchGoods{
+	width: 250px;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid #c9caca;
+	vertical-align: top;
+	float: left;
+	padding: 0 5px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+	
+.vanclSearch input:nth-child(2){
+	cursor: pointer;
+	border: none;
+	width: 49px;
+	height: 29px;
+	float: left;
+	background: url(../img/search.png) no-repeat -100px 0px;
+}
+
+
+.vanclSearch .shopCar{
+	display: block;
+	font-family: "宋体";
+	width: 105px;
+	height: px;
+	line-height: 27px;
+	/* text-align: center; */
+	background: url(../img/search.png) no-repeat -154px 0px;
+	border: 1px solid #c1383e;
+	vertical-align: top;
+	float: right;
+	position: relative;	
+}
+.vanclSearch .shopCar .shopCartitle{
+	font-size: 12px;
+	color: white;
+	margin-left: 28px;
+}
+
+.shopCar:hover{
+	background:url(../img/search.png) no-repeat -154px -29px;
+	border-bottom:0;
+	
+}
+
+.shopCar .buyCarshop{
+	width: 294px;
+	height: auto;
+	padding: 3px 10px;
+	border: 1px solid #b81c22;
+	position: absolute;
+	right:-1px;
+	top:27px;
+	z-index: 9;
+	background: white;
+	color: black;
+	display: none;
+}
+
+.vanclSearch .shopCar:hover .bottomlines{
+	position: absolute;
+	height: 4px;
+	width:100%;
+	top:24px;
+	z-index: 10;
+	left: -1px;	
+	background-color: white;
+	border-left:1px solid #c1383e ;
+}
+.vanclSearch .shopCar:hover .shopCartitle{
+	color:#c1383e;
+}
+.vanclSearch .shopCar span{
+	font-family: "宋体";
+	font-size: 10px;
+	color: white;
+}
+.vanclSearch .shopCar:hover .buyCarshop{
+	display: block;
+}
+
+
+
+.shopCar .SCtotalpageno{
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.vanclSearch .shopCar:hover span{
+	color:#c1383e;
+}
+
+
+
+.buyCarshop .SCtotalpageBottom{
+	height: 50px;
+	display: none;
+	border-bottom: 1px solid darkgray;
+	border-top:1px solid darkgray ;
+	margin-bottom: 10px;
+}
+.SCtotalpageBottom em{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+.SCtotalpageBottom a{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.SCtotalpageBottom .red{
+	color: #c1383e;
+}
+ .buyCarshop .SCtotalpageBottom li{
+	float: left;
+} 
+/* .buyCarshop .SCtotalpageBottom li a{
+	display: block;
+} */
+.buyCarshop .SCtotalpageBottom li:first-child a{
+	width: 50px;
+	height: 50px;
+}
+.buyCarshop .SCtotalpageBottom li:nth-child(2){
+	margin-left: 24px;
+	margin-right: 140px;
+}
+
+.buyCarshop .SCtotalpageBottom li:last-child a{
+	margin-top: 12px;
+}
+
+
+
+
+.buyCarshopbottom{
+	display: none;
+}
+.buyCarshopbottom div{
+	float: left;
+	height: 50px;
+	background-color: white;
+	line-height: 20px;
+}
+.buyCarshopbottom div em:first-child{
+	color: #A9A9A9;
+}
+.buyCarshopbottom div em:last-child{
+	color:#c1383e ;
+}
+.buyCarshopbottom div em{
+	font-size: 12px;
+}
+.buyCarshopbottom strong{
+	text-align: center;
+	display: block;
+	float: right;
+	height: 29px;
+	width: 100px;
+	font-weight: normal;
+	line-height: 29px;
+	background-color: #b81c22;
+	margin-top: 10px;
+	
+}
+.buyCarshopbottom strong a{
+	font-size: 12px;
+	color: white;
+}
+
+
+
+
+.vanclLogoSearch .vanclSearch .Nav{
+	width: 440px;
+	font-size: 12px;
+	font-family: "宋体";
+	color:#727171;
+	padding: 5px 0 0 15px; 
+}
+
+.vanclSearch .Nav a{
+	margin-left: 4px;
+}
+
+
+.mainNavBox{
+	padding-top:9px;
+	width: 1200px;
+	height: 46px;
+	margin: auto;
+}
+.mainNavBox .logo{
+	float: left;
+	margin-right: 20px;
+}
+.mainNavBox .navlist{
+	float: left;
+}
+.mainNavBox .navlist .itms{
+	float: left;
+	width: 99px;
+	height: 24px;
+	text-align: center;	
+	padding-top:22px;
+	padding-bottom: 10px;
+	position: relative;
+	font-size: 16px;
+}
+.navlist .itms a{
+	display:block;
+	pisition:relative;
+}
+.navlist .itms a em{
+	display: block;
+	width: 25px;
+	height: 13px;
+	background: url(../img/icon_hot.png) no-repeat;
+	position: absolute;
+	left: 67px;
+	top: 17px;
+}
+.navlist .itms span{
+	position:absolute;
+	right: -1px;
+	top: 28px;
+	display: block;
+	width: 1px;
+	height: 16px;
+	border-right: 1px solid #888;
+}
+.navlist .itms .subNav{
+	display: none;
+	width: 100px;
+	position: absolute;
+	left:0;
+	top:52px;
+	background-color: white;
+	z-index: 100;
+}
+.navlist .itms .subNav p{
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color:#B81C22 ;
+}
+.navlist .itms .subNav ul{
+	border: 1px solid #efefef;
+	border-top: 0;
+	padding: 10px 0;
+}
+.navlist .itms .subNav ul li{
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+}
+.mainNavBox .navlist a:hover{
+	color:#a10000;
+}
+ 
+
+/* banner */
+.Banner{
+	width: 1200px;
+	height: 535px;
+	margin: auto;
+	position: relative;
+	margin-bottom: 40px;
+}
+.Banner .igs{
+	position: absolute;
+}
+
+.Banner .ig{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.Banner .ig img{
+	width: 1200px;
+	height: 535px;
+}
+.Banner .pre,.next{
+	display: block;
+	width: 28px;
+	height: 60px;	
+}
+.Banner p:nth-child(2){
+	position: absolute;
+	left: 10px;
+	top: 230px;
+	background: url(../img/next.png) no-repeat;
+}
+.Banner p:nth-child(3){
+	position: absolute;
+	right:  10px;
+	top: 230px;
+	background: url(../img/next.png) no-repeat -52px 0;
+}
+.Banner p:nth-child(2):hover{
+	background: url(../img/next.png) no-repeat 0 -61px;
+}
+.Banner p:nth-child(3):hover{
+	background: url(../img/next.png) no-repeat -52px -61px;
+}
+.tabs{
+	position: absolute;
+	top: 500px;
+	right:46%;
+}
+.tabs li{
+	float: left;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #dddddd;
+	margin-right: 8px;
+}
+.tabs li a{
+	display: block;
+	height: 12px;
+	width: 12px;
+}
+.tabs .bg{
+	background-color: #a10000;
+	
+}
+
+
+/* backtop */
+.BackTop{
+	z-index: 100;
+	position: fixed;
+	right:10px;
+	top: 300px;
+	
+}
+.BackTop li{
+	width: 76px;
+	
+}
+.BackTop a{
+	display: block;
+	height: 76px;
+		
+}
+.BackTop .newpeople{
+	background: url(../img/baywindow0716.png) no-repeat 0px 0px;
+}
+.BackTop .App{
+	background: url(../img/baywindow.png) no-repeat 0px 0px;
+}
+.BackTop .inline{
+	background: url(../img/baywindow0716.png) no-repeat 0 -150px;
+}
+.BackTop .gotop{
+	background: url(../img/baywindow0716.png) no-repeat 0 -224px;
+	
+}
+
+
+/* <!-- Goods --> */
+.Goods{
+	width:100%;
+}
+.getMoney{
+	display: block;
+	width: 1195px;
+	height: 69px;
+	background-color: green;
+	margin: auto;
+	margin-bottom: 24px;
+}
+
+
+/* timeout */
+.TimeOut{
+	display: block;
+	width: 1200px;
+	height: 64px;
+	background: url(../img/mm.jpg) no-repeat;
+	margin: auto;
+	line-height: 64px;
+	font-size: 18px;
+}
+.TimeOut p{
+	margin-left: 800px;
+	padding-right: 20px;
+	position: relative;
+}
+.TimeOut .word{
+	margin-right: 20px;
+	color: white;
+}
+.TimeOut p .time{
+	color: #a10000;
+}
+.TimeOut p .Our{
+	margin-right: 36px;
+}
+.TimeOut p .Min{
+	margin-right: 37px;
+}
+
+
+/* Tshite */
+
+.Tshit{
+	width: 1200px;
+	overflow: hidden;
+	padding-top: 10px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.Tshit .tshitGoods{
+	width:232px;
+}
+.Tshit .tshitGoods img{
+	margin-bottom: 10px;
+}
+
+.Tshit .tshitGoods .cheaq span{
+	float: left;
+	display: inline-block;
+}
+.Tshit .tshitGoods .cheaq b{
+	display: inline-block;
+	float: left;
+}
+.Tshit .tshitGoods .cheaq em{
+	float: right;
+}
+
+.Tshit .tshitGoods .goodsName{
+	font-size: 16px;
+	color: #474747;
+	line-height: 16px;
+	margin-bottom: 29px;
+}
+.tshitGoods span:nth-child(3){
+	font-size: 14px;
+	color: #d3d3d3;
+	text-decoration: line-through;
+}
+
+.tshitGoods p{
+	width: 232px;
+}
+
+.tshitGoods p:last-child{
+	font-size: 16px;
+	color: #bb2b34;
+	line-height: 16px;
+}
+.tshitGoods .cheap span:first-child{
+	float: left;
+	line-height: 24px;
+}
+.tshitGoods .cheap .s1{
+	float: right;
+	margin-right: 10px;
+}
+.tshitGoods .s1{
+	color: #474747;
+}
+.tshitGoods .s1 em{
+	color:#bb2b34;
+	font-size: 24px;
+}
+
+/* <!-- NewGoods --> */
+.NewGoods{
+	width: 1200px;
+	margin: auto;
+}
+.NewGoods a{		
+	display: block;
+}
+
+/* NewGoodsplay */
+
+.NewGoodsplay{
+	margin: auto;
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.NewGoodsplay a{
+	width: 268px;
+	height: 427px;
+	margin-bottom: 20px;
+}
+
+/* Mindbanner */
+.Mindbanner{
+	margin: auto;
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.Mindbanner a{
+	width: 300px;
+	height: 577px;
+	margin-bottom: 20px;
+}
+
+
+/* <!-- goodgoods --> */
+
+.GoodGoods{
+	width: 1200px;
+	height: auto;
+	margin: auto;
+	overflow: hidden;	
+}
+h2{
+	width: 1200px;
+	margin: auto;
+	padding: 30px 0;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	color:#9a9a9a;
+	font-weight: normal;
+}
+
+
+
+.pice_one{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.pice_one a{
+	display: block;
+	border: 1px solid #e8e7ec;
+}
+.pice_one a:first-child{
+	width: 590px;
+	height: 509px;
+}
+
+.pice_one .pice_mind{
+	width: 290px;
+	height: 530px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pice_one .pice_mind .pice_two{
+	width:290px ;
+	height: 249px;
+}
+
+
+.pice_one a:last-child{
+	width: 286px;
+	height: 509px;
+}
+
+.pice_one .p1{
+	width: 566px;
+	height: 69px;
+	line-height:69px;
+	padding: 0 12px;
+	
+}
+
+.pice_one .pice_mind p{
+	width: 266px;
+	height: 69px;
+	line-height: 69px;
+	padding: 0 12px;
+	
+}
+
+.pice_one .p3{
+	width: 262px;
+	height: 69px;
+	line-height: 69px;
+	padding: 0 12px;
+}
+
+.pice_one .sp1{
+	float: left;
+	font-size: 14px;
+}
+.pice_one{
+	font-family: "Microsoft YaHei";
+}
+.pice_one .buyMin{
+	float: right;
+	font-size: 14px;
+	color: #a10000;
+}
+
+.pice_one em{
+	float: right;
+	margin-left: 12px;
+	font-size: 16px;
+	color: #A10000;
+}
+
+
+
+
+
+.Pants{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Pants a{
+	width:284px;
+	height: 508px;
+	border: 1px solid #e8e7ec;
+}
+
+.Pants a p{
+	height: 70px;
+	line-height: 70px;
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	padding: 0 12px;
+}
+.Pants a p em{
+	float: right;
+	font-size: 16px;
+	color: #A10000;
+}
+
+.Pants a p em:nth-child(2){
+	font-size: 14px;
+}	
+
+.Pants a p:first-child{
+	float: left;
+}
+
+.Pants a .p2{
+	float: right;
+	color: #A10000;
+	margin-right: 16px;
+}
+
+
+
+
+
+.more{
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 32px;
+}
+.more a{
+	width: 385px;
+	height: 275px;
+}
+
+
+
+
+.vanclFoot{
+	width: 1118px;
+	height: 288px;
+	margin: auto;
+	border: 1px solid #e0e0e1;
+	padding: 0 40px;
+}
+
+.vanclFoot .publicfooterclear{
+	margin: 33px 0 23px;
+	overflow: hidden;
+}
+
+.publicfooterclear a{
+	float: left;
+	width: 370px;
+	height: 152px;
+	border-right: 1px solid #e0e0e1;
+}
+
+.publicfooterclear li img{
+	margin:0 auto 20px;
+}
+
+.publicfooterclear li .tuihuo{
+	margin-bottom: 30px;
+}
+
+.publicfooterclear li p{
+	font-size:14px;
+	width: 156px;
+	height: 32px;
+	text-align: center;
+	line-height:10px;
+	margin: auto;
+}
+
+
+
+.publicfooterclear li .pp1{
+	font-size:14px;
+	width: 156px;
+	height: 32px;
+	text-align: center;
+	line-height:32px;
+	background-color: #b81c22;
+	color: white;
+	margin: auto;
+}
+.publicfooterclear .saoyisao{
+	width: 104px;
+	height: 104px;
+}
+.publicfooterclear .fanke{
+	color:#a10000;
+}
+
+.footerNav{
+	width: 1118px;
+	height: 57px;
+	background-color: #f8f8f8;
+}
+.footerNav a{
+	font-size: 12px;
+	text-align: center;
+	display: inline-block;
+	width: 179px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 16px;
+	border-right: 1px solid #e0e0e1; ;
+}
+
+.footerNav a:last-child{
+	border-right: none;
+}
+
+
+
+
+
+.footer{
+	width: 100%;
+	height: 136px;
+	background-color: white;
+	border-top: 1px solid black;
+	margin-top: 30px;
+	
+}
+ 
+.footer p{
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.footer p:first-child{
+	padding-top: 16px;
+}
+
+
+.footer p:nth-child(2){
+	padding-bottom: 30px;
+}
+
+
+.footerEnd a{
+	display:inline-block;
+	margin-right: 12px;
+}
+
+
+.footerEnd{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.footerEnd img{
+	width: 50px;
+	height: 20px;
+}
+
+

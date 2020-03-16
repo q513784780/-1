@@ -1,0 +1,296 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#727171;
+}
+img{
+	border: none;
+	display:block;
+}
+em{
+	font-style: normal;
+	font-weight: 600;
+}
+
+
+/* header */
+
+.top{
+	width: 1200px;
+	margin: 10px auto 0;
+	padding: 0 0 10px 0;
+	border-bottom: solid 1px #919191;
+}
+
+form{
+	width: 1200px;
+	margin: auto;
+
+	overflow: hidden;
+}
+
+input{
+	text-indent: 16px;
+}
+
+.mind{
+	    width: 100%;
+	    height: 10px;
+	    overflow: hidden;
+	    clear: both;
+}
+
+.regist{
+	width: 100%;
+	overflow: hidden;
+	height: 547px;
+	margin: 45px 0 0 0;
+	border-bottom: solid 1px #919191;
+}
+
+.regist h1{
+	height: 35px;
+	width: 415px;
+	float: right;
+	line-height: 35px;
+	margin: 0 100px 0 0;
+	border-bottom: 2px solid #b81e20;
+	/* padding-left: 10px; */
+	font-size: 20px;
+	color: #a2a2a2;
+	font-weight: 500;
+}
+
+.regist h1 span{
+	font-size: 14px;
+	float: right;
+}
+
+.regist h1 span a{
+	color: #b52024;
+}
+
+.content_left{
+	width: 415px;
+	float: right;
+	margin: 0 95px 0 0;
+	padding-top: 20px;
+	height: 900px;
+}
+
+.newtxt{
+	border: 0 none;
+	width: 415px;
+	height: 45px;
+	overflow: inherit;
+	zoom: 1;
+	position: relative;
+}
+
+.newtxt input{
+	width: 262px;
+	border: solid 1px #cbcbcb;
+	height: 43px;
+	line-height: 43px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.yanzhen a{
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	width: 140px;
+	height: 43px;
+	float: right;
+	text-align: center;
+	border: solid 1px #cbcbcb;
+	line-height: 43px;
+	font-size: 14px;
+	letter-spacing: 16px;
+	text-indent: 10px;
+}
+
+.newtxt span{
+	position: absolute;
+	left: 0;
+	top: 45px;
+	display: block;
+	color: #a10000;
+	border: 1px #ffd5d5 solid;
+	padding: 3px 5px;
+	z-index: 20;
+	background: #f9f9f9;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.newPhone{
+	margin-top: 20px;
+}
+
+.newPhone a{
+	display: block;
+	cursor: pointer;
+	vertical-align: middle;
+	width: 140px;
+	height: 45px;
+	float: right;
+	background-color: #f5f5f5;
+	text-align: center;
+	line-height: 45px;
+	font-size: 12px;
+	border: solid 1px #cbcbcb;
+	color: #b52024!important;
+	
+}
+.phonePwd{
+	border: 0 none;
+	width: 410px;
+	height: 45px;
+	overflow: inherit;
+	zoom: 1;
+	background-color: yellow;
+	position: relative;
+	margin-top: 20px;
+}
+
+.phonePwd input{
+	width: 410px;
+	border: solid 1px #cbcbcb;
+	height: 45px;
+	line-height: 45px;
+}
+
+.phonePwd a{
+	display: block;
+	text-align: center;
+	width: 140px;
+	height: 45px;
+}
+
+.phonePwd span{
+	position: absolute;
+	left: 0;
+	top: 45px;
+	display: block;
+	color: #a10000;
+	border: 1px #ffd5d5 solid;
+	padding: 3px 5px;
+	z-index: 20;
+	background: #f9f9f9;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.v2reg_bt{
+	margin-top: 30px;
+}
+
+.content_left span{
+	display: none;
+}
+
+.v2reg_bt input{
+	vertical-align: top;
+}
+
+.v2reg_bt span{
+	display: inline-block;
+	font-size: 14px;
+	color: #9d9d9d;
+	line-height: 10px;
+	vertical-align: top;
+}
+
+.v2reg_bt span a{
+	font-size: 12px;
+	color: #a10000;
+}
+
+.v2reg_bt .submit{
+	display: block;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	line-height:45px ;
+	background-color: #9A9A9A;
+	margin-top: 20px;
+	color: white;
+}
+
+.v2reg_bt .submit:hover{
+	text-decoration: underline;
+	cursor:pointer
+}
+
+.content_right{
+	width: 465px;
+	height: 500px;
+	float: left;
+	margin-left: 130px;
+}
+
+
+
+/* footer */
+.footer{
+	width: 1200px;
+	height: 119px;
+	margin: auto;
+}
+
+.footer p{
+	padding-top:15px;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	margin-bottom: 20px;
+}
+
+.footer .footerLogo{
+	margin: auto;
+	width: 601px;
+	height: 42px;
+}
+
+.footerLogo a{
+	display: inline-block;
+	text-align: center;
+	float: left;
+	width:113px;
+	height: 42px;
+	background: url(../img/hahaha.png) no-repeat 0 -400px transparent;
+	margin: 0 10px;
+}
+
+.footerLogo a:nth-child(2){
+	background: url(../img/hahaha.png) no-repeat 0 -448px transparent;
+	width: 156px;
+}
+
+.footerLogo a:nth-child(3){
+	background: url(../img/hahaha.png) no-repeat 0 -494px transparent;
+	width:96px;
+}
+
+.footerLogo a:nth-child(4){
+	background: url(../img/hahaha.png) no-repeat -97px -494px transparent;
+	width: 156px;
+}
+
+
+
+
+
+

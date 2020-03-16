@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车 - VANCL 凡客诚品</title>
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<div class="boddy">
+			<div id="header" class="clearfix">
+				<a class="logo" href="#">
+					<img src="img/vancl-logo.png" alt="">
+				</a>
+				<div class="help-center">
+					<a href="">帮助中心</a>
+				</div>
+				<div class="account">
+					<p>
+						您好，欢迎光临凡客诚品。
+						<a class="login" target="_blank" href="load.html">登录</a>
+						|
+						<a target="_blank" href="post.html">注册</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- Location -->
+			<div class="location">
+				<em>1.我的购物车</em>
+				<span>2.填写核对信息单</span>
+				<span>3.成功提交订单</span>
+			</div>
+
+			<div id="content">
+				<div class="cart-top">
+					<h2>
+						我的购物车
+					</h2>
+				</div>
+
+				<div class="tip">
+					<span>温馨提示 :</span>
+					1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中.
+				</div>
+
+				<div id="cart-product" class="clearfix">
+					<table cellpadding="0">
+						<thead>
+							<tr>
+								<th class="title-white bd-left">
+									&nbsp;
+								</th>
+								<th class="bar-title ">
+									<input id="all-ckb-top" type="checkbox" class="track all-products-ckb ckb" name="all-products" value="all-products"
+									 data-del-tip=""><label for="all-ckb-top">全选</label>
+								</th>
+								<th class="image">
+									&nbsp;
+								</th>
+								<th class="name">
+									商品名称
+								</th>
+								<th class="size">
+									尺寸
+								</th>
+								<th class="presentpoints" style="display:none">
+									积分
+								</th>
+								<th class="price">
+									单价
+								</th>
+								<th class="qty">
+									数量
+								</th>
+								<th class="discount">
+									优惠
+								</th>
+								<th class="subtotal">
+									小计
+								</th>
+								<th class="operate ">
+									操作
+								</th>
+								<th class="title-white bd-right">
+									&nbsp;
+								</th>
+							</tr>
+						</thead>
+
+
+
+						<tbody id="supplier-general-product_tb" name="supplier-general-product_tb">
+							<tr>
+								<td class="white bd-left bd-bottom">
+									&nbsp;
+								</td>
+								<td class="bar bd-bottom" rowspan="1" colspan="6">
+								</td>
+								<td class="bd-bottom">
+								</td>
+								<td class="subtotal bd-bottom">
+								</td>
+								<td class="operate bd-bottom">
+								</td>
+								<td class="white bd-right bd-bottom">
+								</td>
+							</tr>
+							<tr>
+								<td class="white bd-left">
+									&nbsp;
+								</td>
+								<td class="bar" rowspan="1">
+									<input type="checkbox" class="track ckb" name="p-item" data-del-tip="" value="" issupplier="False" shopid="10258"
+									 selectedclothescode="15810411">
+								</td>
+								<td class="image" rowspan="1">
+									<a target="_blank" href="#">
+										<img alt="T恤 张广先 唐三彩 白色" src="https://ssl.vanclimg.com/48/product/6/3/8/6385360/big/6385360-1j201904031058417911.jpg"></a>
+								</td>
+								<td class="name">
+									<a target="_blank" href="#" title="T恤 张广先 唐三彩 白色">
+										T恤 张广先 唐三彩 白色
+									</a>
+									<div class="loup"></div>
+								</td>
+								<td class="size">
+									<a target="_blank" title="S">
+										S
+									</a>
+								</td>
+								<td class="presentpoints" style="display: none">
+									58分
+								</td>
+								<td class="price">
+									￥
+									<span class="pirceCost">58.00</span>
+								</td>
+								<td class="qty">
+									<button>-</button>
+									<span class="pirceNumber">0</span>
+									<button>+</button>
+								</td>
+								<td>
+									-
+								</td>
+								<td class="subtotal">
+									￥<span class="tollCost">58.00</span>
+								</td>
+								<td class="operate">
+									<a class="del track" name="sp_cart_mycart_del" href="#">
+										删除</a>
+								</td>
+								<td class="white bd-right">
+									&nbsp;
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="white bd-left table-bottom table-bottom-td">
+									&nbsp;
+								</td>
+								<td colspan="9" class="table-bottom table-bottom-td">
+									&nbsp;
+								</td>
+								<td class="white bd-right table-bottom table-bottom-td">
+									&nbsp;
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div id="bar-summary" class="bar-summary clearfix" style="top: 0px;">
+						<div class="bar">
+							<input id="all-ckb-bt" type="checkbox" name="all-products" value="all-products" class="track all-products-ckb ckb"
+							 data-del-tip=""><label for="all-ckb-bt">全选</label>
+							<a href="javascript:;" class="batch-del-cart track" name="sp_cart_mycar_batch_clear">
+								删除</a>
+							<span>数量总计：<em id="Allnumber">0</em>件</span>
+							<span>
+								<em>
+								</em>
+							</span>
+						</div>
+						<div class="summary">
+
+							产品金额总计(不含运费)：<span class="amount">￥<em id="Allcost">0.00</em></span>
+
+						</div>
+						<div class="btn-panel">
+							<a href="#" class="go-buy track" name="sp_cart_mycar_goBuy">
+								&lt;&lt;继续购物</a>
+							<a class="checkout track" href="#" id="sp_cart_mycar_goPay" name="sp_cart_mycar_goPay">
+								¥去结算&gt;&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<p>Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+				<p>凡客诚品（北京）科技有限公司</p>
+				<div class="footerEnd">
+					<a href=""><img src="img/footer.png" alt=""></a>
+					<a href=""><img src="img/cc.png" alt=""></a>
+					<a href=""><img src="img/nn.png" alt=""></a>
+					<a href=""><img src="img/jj.png" alt=""></a>
+					<a href=""><img src="img/ff.png" alt=""></a>
+					<a href=""><img src="img/uu.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jQuery.js"></script>
+<script src="js/shopcar.js"></script>

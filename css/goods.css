@@ -1,0 +1,1091 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#727171;
+}
+img{
+	border: none;
+	display:block;
+}
+em{
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* header */
+.vanclHead{
+	width: 100%;
+	height:167px;
+	padding-bottom: 30px;
+}
+.headertoparea{
+	width: 100%;
+	height: 30px;
+	background-color: #f7f7f7;
+	border-bottom:1px solid #ccc ;
+}
+.headerTop{
+	width: 1200px;
+	height:30px;
+	margin: auto;
+	border-bottom:1px solid #ccc ;
+}
+
+.headerTop a{
+	font-size: 12px;
+	font-family: "宋体";
+	color:#808080;
+}
+
+.headerTop a:hover{
+	color:#a10000;
+}
+
+.headerTopright{
+	width: 126px;
+	height: 30px;
+	float: right;
+}
+
+.headerTopright a{
+	display: inline-block;
+}
+
+.headerTopright .mapDropTitle{
+	width: 81px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 25px;
+	background-color: #008000;
+	background: url(../img/notice.png) no-repeat 0 6px;
+	float: left;
+}
+
+.headerTopright .weixin,.weibo{
+	float: left;
+	width: 18px;
+	height: 18px;
+	padding-top: 6px;
+	/* overflow: hidden; */
+}
+
+.headerTopright .weixin{
+	margin-right: 1px;
+	position: relative;
+}
+
+
+.headerTopright .weixin .weixinTip{
+	width: 148px;
+	height:169px;
+	position: absolute;
+	right: -16px;
+	top:30px;
+	background-image: url(../img/weixin.png);
+	display: none;
+	z-index: 10;
+}
+
+.headerTopright .weixin:hover .weixinTip{
+	display: block;
+	
+}
+
+
+.headerTopleft{
+	width: 312px;
+	height:30px ;
+	float: right;
+	color:#808080;
+	font-size: 12px;
+	line-height: 30px;
+	font-family: "宋体";
+	
+}
+
+.headerTopleft a:nth-child(3){
+	margin-right: 10px;
+}
+
+
+
+.vanclLogoSearch{
+	width:1200px;
+	height: 62px;
+	margin:20px auto 0;
+}
+.vanclSearch{
+	float: right;
+	padding-top: 8px;
+	width: 438px;
+}
+.search1{
+	width: 438px;
+	height: 29px;
+}
+.vanclSearch .searchGoods{
+	width: 250px;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid #c9caca;
+	vertical-align: top;
+	float: left;
+	padding: 0 5px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+	
+.vanclSearch input:nth-child(2){
+	cursor: pointer;
+	border: none;
+	width: 49px;
+	height: 29px;
+	float: left;
+	background: url(../img/search.png) no-repeat -100px 0px;
+}
+
+
+.vanclSearch .shopCar{
+	display: block;
+	font-family: "宋体";
+	width: 105px;
+	height: px;
+	line-height: 27px;
+	/* text-align: center; */
+	background: url(../img/search.png) no-repeat -154px 0px;
+	border: 1px solid #c1383e;
+	vertical-align: top;
+	float: right;
+	position: relative;	
+}
+.vanclSearch .shopCar .shopCartitle{
+	font-size: 12px;
+	color: white;
+	margin-left: 28px;
+}
+
+.shopCar:hover{
+	background:url(../img/search.png) no-repeat -154px -29px;
+	border-bottom:0;
+	
+}
+
+.shopCar .buyCarshop{
+	width: 294px;
+	height: auto;
+	padding: 3px 10px;
+	border: 1px solid #b81c22;
+	position: absolute;
+	right:-1px;
+	top:27px;
+	z-index: 9;
+	background: white;
+	color: black;
+	display: none;
+}
+
+.vanclSearch .shopCar:hover .bottomlines{
+	position: absolute;
+	height: 4px;
+	width:100%;
+	top:24px;
+	z-index: 10;
+	left: -1px;	
+	background-color: white;
+	border-left:1px solid #c1383e ;
+}
+.vanclSearch .shopCar:hover .shopCartitle{
+	color:#c1383e;
+}
+.vanclSearch .shopCar span{
+	font-family: "宋体";
+	font-size: 10px;
+	color: white;
+}
+.vanclSearch .shopCar:hover .buyCarshop{
+	display: block;
+}
+
+
+
+.shopCar .SCtotalpageno{
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.vanclSearch .shopCar:hover span{
+	color:#c1383e;
+}
+
+
+
+.buyCarshop .SCtotalpageBottom{
+	height: 50px;
+	display: none;
+	border-bottom: 1px solid darkgray;
+	border-top:1px solid darkgray ;
+	margin-bottom: 10px;
+}
+.SCtotalpageBottom em{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+.SCtotalpageBottom a{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.SCtotalpageBottom .red{
+	color: #c1383e;
+}
+ .buyCarshop .SCtotalpageBottom li{
+	float: left;
+} 
+/* .buyCarshop .SCtotalpageBottom li a{
+	display: block;
+} */
+.buyCarshop .SCtotalpageBottom li:first-child a{
+	width: 50px;
+	height: 50px;
+}
+.buyCarshop .SCtotalpageBottom li:nth-child(2){
+	margin-left: 24px;
+	margin-right: 140px;
+}
+
+.buyCarshop .SCtotalpageBottom li:last-child a{
+	margin-top: 12px;
+}
+
+
+
+
+.buyCarshopbottom{
+	display: none;
+}
+.buyCarshopbottom div{
+	float: left;
+	height: 50px;
+	background-color: white;
+	line-height: 20px;
+}
+.buyCarshopbottom div em:first-child{
+	color: #A9A9A9;
+}
+.buyCarshopbottom div em:last-child{
+	color:#c1383e ;
+}
+.buyCarshopbottom div em{
+	font-size: 12px;
+}
+.buyCarshopbottom strong{
+	text-align: center;
+	display: block;
+	float: right;
+	height: 29px;
+	width: 100px;
+	font-weight: normal;
+	line-height: 29px;
+	background-color: #b81c22;
+	margin-top: 10px;
+	
+}
+.buyCarshopbottom strong a{
+	font-size: 12px;
+	color: white;
+}
+
+
+
+
+.vanclLogoSearch .vanclSearch .Nav{
+	width: 440px;
+	font-size: 12px;
+	font-family: "宋体";
+	color:#727171;
+	padding: 5px 0 0 15px; 
+}
+
+.vanclSearch .Nav a{
+	margin-left: 4px;
+}
+
+
+.mainNavBox{
+	padding-top:9px;
+	width: 1200px;
+	height: 46px;
+	margin: auto;
+}
+.mainNavBox .logo{
+	float: left;
+	margin-right: 20px;
+}
+.mainNavBox .navlist{
+	float: left;
+}
+.mainNavBox .navlist .itms{
+	float: left;
+	width: 99px;
+	height: 24px;
+	text-align: center;	
+	padding-top:22px;
+	padding-bottom: 10px;
+	position: relative;
+	font-size: 16px;
+}
+.navlist .itms a{
+	display:block;
+	pisition:relative;
+}
+.navlist .itms a em{
+	display: block;
+	width: 25px;
+	height: 13px;
+	background: url(../img/icon_hot.png) no-repeat;
+	position: absolute;
+	left: 67px;
+	top: 17px;
+}
+.navlist .itms span{
+	position:absolute;
+	right: -1px;
+	top: 28px;
+	display: block;
+	width: 1px;
+	height: 16px;
+	border-right: 1px solid #888;
+}
+.navlist .itms .subNav{
+	display: none;
+	width: 100px;
+	position: absolute;
+	left:0;
+	top:52px;
+	background-color: white;
+	z-index: 900;
+}
+.navlist .itms .subNav p{
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color:#B81C22 ;
+}
+.navlist .itms .subNav ul{
+	border: 1px solid #efefef;
+	border-top: 0;
+	padding: 10px 0;
+}
+.navlist .itms .subNav ul li{
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+}
+.mainNavBox .navlist a:hover{
+	color:#a10000;
+}
+/* middle */
+.middle{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.nav{
+	height: 22px;
+	color: #000;
+	font-family:"宋体";
+}
+
+.nav a{
+	font-size: 12px;
+}
+
+.nav span{
+	margin: 0 8px;
+	font-size: 12px;
+	color: #333;
+}
+
+.newclear{
+	width: 1200px;
+	height: 45px;
+	border-bottom: 1px solid #e5e6e6;
+	line-height: 45px;
+}
+
+.newclear h2{
+	font-size: 18px;
+	margin-left: 10px;
+	float: left;
+}
+.newclear h2 span{
+	font-size: 14px;
+	color: #a10000;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.newclear .fr{
+	float: right;
+	color: #808080;
+}
+
+.newclear .fr li{
+	float: left;
+	color: #808080;
+	height: 45px;
+	margin-right: 10px;
+}
+
+.newclear .fr li a{
+	display: inline-block;
+	padding: 0px 15px 0px 0px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #808080;
+}
+
+
+.Biggoods{
+	width: 1200px;
+	height: 440px;
+	margin: 30px 0 20px;
+	border-bottom:1px solid #e5e6e6;
+}
+
+.danpinLeft{
+	width: 634px;
+	height: 426px;
+	float: left;
+/* 	position:relative; */
+}
+
+.danpinLeft .smallpicture{
+	width: 72px;
+	height: 426px;
+	float: left;
+}
+
+
+.smallpicture a{
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+	background: url(../img/joinimages.jpg) no-repeat;
+	border: 1px solid #a10000;
+}
+
+.BigLoupe{
+	/* position: relative; */
+	float: right;
+	margin-right: 61px;
+	width: 400px;
+	height: 400px;
+}
+
+.danpinLeft .smallbox{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border: 1px solid black;
+	background: url(../imgs/1.jpg);
+	z-index: 400;
+	
+}
+
+.smallbox .mask{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 200px;
+	height: 200px;
+	background: #e6eaf3;
+	opacity: .6;
+	display: none;
+	cursor: crosshair;
+}
+
+.danpinLeft .bigbox{
+	width: 450px;
+	height: 400px;
+	position: absolute;
+	right: 330px;
+	top: 234px;
+	background: url(../imgs/1.jpg);
+	background-size:900px 800px ;
+	display:none;
+	z-index: 20;
+	border: 1px solid black;
+}
+
+.danpinRight{
+	float: right;
+	width: 561px;
+	height: 373px;
+	position: relative;
+}
+
+
+.danpinRight p{
+	font-size: 12px;
+}
+
+
+.danpinRight .timeout{
+	font-size: 12px;
+	color: #A10000;
+}
+
+.danpinRight .timeout span{
+	font-size: 24px;
+	font-family: Tahoma;
+}
+.danpinRight .timeout a{
+	font-size: 12px;
+	font-family: "宋体";
+	color:#A10000;
+	margin-left: 20px;
+}
+
+.color{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.color p{
+	font-size: 12px;
+	line-height: 12px;
+	float: left;
+}
+
+.color a{
+	display: block;
+	float: left;
+	width: 97px;
+	height: 34px;
+	background: url(../img/ddd.jpg) no-repeat ;
+	text-align: center;
+	color: #000000;
+	font-size: 12px;
+	border: 1px solid black;
+	margin-left: 8px;
+}
+
+.color a:nth-child(2){
+	background-position: 0 -2px;
+	border: 2px solid #b81c22;
+}
+.color a:last-child{
+	background-position: 0 -37px;
+}
+
+.size{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.size a{
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+
+.num{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.num p{
+	float: left;
+	line-height: 20px;
+}
+
+.num select{
+	vertical-align: top;
+	width: 53px;
+	height: 20px;
+}
+
+.num span{
+	font-size: 12px;
+	color: #a10000;
+	margin-left: 10px;
+} 
+
+.Chose{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.Chose p{
+	float: left;
+	line-height: 17px;
+}
+
+.Chose span{
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.Chose span:last-child{
+	margin-left: 10px;
+	color: #a10000;
+}
+
+.GoBuy{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.GoBuy a{
+	display: block;
+	float: left;
+	width: 168px;
+	height: 33px;
+	color: #A50309;
+	text-align: center;
+	line-height: 33px;
+}
+
+.GoBuy a:first-child{
+	background: #F7ABAF;
+	margin-right: 10px;
+}
+
+.GoBuy a:last-child{
+	background: url(../img/vanclsprite.png) no-repeat -147px -285px;
+}
+
+
+.underline{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.underline h4{
+	width: 400px;
+	min-height:13px;
+
+	line-height: 14px;
+	margin-bottom: 6px;
+	color: #a20000;
+	border-bottom: 1px solid #a20000;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.underline h4 span{
+   display: inline-block;
+   height: 22px;
+	line-height: 22px;
+	text-align: center;
+	background: #ffffff;
+	position: absolute;
+	left: 167px;
+	top: 0;
+	padding: 0 8px;
+	font-size: 12px;
+	z-index: 10;
+}
+
+.underline .mianyou{
+	float: left;
+	font-size: 12px;
+	line-height: 12px;
+	width: 34px;
+	height: 16px;
+	background: #b81c22;
+	color: white;
+	text-align: center;
+	margin-right: 10px;
+} 
+
+
+.area1{
+	margin-top: 64px;
+}
+
+.area1 h3{
+    color: #999999;
+    font-weight: bold;
+    position: relative;
+    width: 748px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+
+.area1 span{
+	font-size: 12px;
+	color: #999999;
+	font-family: "宋体";
+}
+
+.vanclFoot{
+	width: 1118px;
+	height: 288px;
+	margin: auto;
+	border: 1px solid #e0e0e1;
+	padding: 0 40px;
+}
+
+.vanclFoot .publicfooterclear{
+	margin: 33px 0 23px;
+	overflow: hidden;
+}
+
+.publicfooterclear a{
+	float: left;
+	width: 370px;
+	height: 152px;
+	border-right: 1px solid #e0e0e1;
+}
+
+.publicfooterclear li img{
+	margin:0 auto 20px;
+}
+
+.publicfooterclear li .tuihuo{
+	margin-bottom: 30px;
+}
+
+.publicfooterclear li p{
+	font-size:14px;
+	width: 156px;
+	height: 32px;
+	text-align: center;
+	line-height:10px;
+	margin: auto;
+}
+
+
+
+.publicfooterclear li .pp1{
+	font-size:14px;
+	width: 156px;
+	height: 32px;
+	text-align: center;
+	line-height:32px;
+	background-color: #b81c22;
+	color: white;
+	margin: auto;
+}
+.publicfooterclear .saoyisao{
+	width: 104px;
+	height: 104px;
+}
+.publicfooterclear .fanke{
+	color:#a10000;
+}
+
+.footerNav{
+	width: 1118px;
+	height: 57px;
+	background-color: #f8f8f8;
+}
+.footerNav a{
+	font-size: 12px;
+	text-align: center;
+	display: inline-block;
+	width: 179px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 16px;
+	border-right: 1px solid #e0e0e1; ;
+}
+
+.footerNav a:last-child{
+	border-right: none;
+}
+
+
+
+
+
+.footer{
+	width: 100%;
+	height: 136px;
+	background-color: white;
+	border-top: 1px solid black;
+	margin-top: 30px;
+	
+}
+ 
+.footer p{
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.footer p:first-child{
+	padding-top: 16px;
+}
+
+
+.footer p:nth-child(2){
+	padding-bottom: 30px;
+}
+
+
+.footerEnd a{
+	display:inline-block;
+	margin-right: 12px;
+}
+
+
+.footerEnd{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.footerEnd img{
+	width: 50px;
+	height: 20px;
+}
+
+
+/* 弹出层 */
+.eject{
+	width: 498px;
+	border: 1px solid #b81b22;
+	background-color: #FFFFFF;
+	position: absolute;
+	z-index: 200000;
+	overflow: hidden;
+	display: none;
+	right: 62;
+	top:176px;
+}
+
+.CarBox_Title{
+	width: 498px;
+	height: 42px;
+	background-color: #b81b22;
+	text-indent: 14px;
+	font-size: 16px;
+	font-family: "宋体";
+	line-height: 42px;
+	color: white;
+	margin-bottom: 20px;
+}
+.eject h2 span{
+	font-size: 13px;
+	float: right;
+	margin-top: 13px;
+	margin-right: 27px;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	color:white;
+	text-indent: 0;
+	line-height: 12px;
+	background-image:url(../img/search.png);
+	background-position:  -369px -113px;
+}
+
+.CarBox_Content{
+	height: 95px;
+	margin: 0 28px;
+	border-bottom:1px dotted #727171;
+}
+
+.carBox_bg{
+	width: 74px;
+	height: 74px;
+	padding-right: 18px;
+	background: url(../img/search.png) no-repeat scroll -231px -119px;
+	float: left;
+}
+
+.CarBox_NumPrice{
+	width: 180px;
+	height: auto;
+	float: left;
+}
+
+.line01{
+	display: block;
+	width: 1px;
+	height: 36px;
+	line-height: 0px;
+	font-size: 0px;
+	margin-top: 19px;
+	margin-right: 15px;
+	background: #b81c22;
+	overflow: hidden;
+}
+
+.CarBox_NumPrice .f1{
+	float: left;
+}
+
+.CarBox_NumPrice div{
+	height: auto;
+	width: 158px;
+	padding-top: 14px;
+}
+
+.CarBox_NumPrice p span{
+	margin: 0 3px;
+	display: block;
+	float: left;
+	line-height: 22px;
+	font-size: 14px;
+	color: #000000;
+}
+#shopcarcount{
+	color: #b81c22;
+}
+
+.CarBox_NumPrice p span{
+	margin: 0px 3px;
+	display: block;
+	float: left;
+	line-height: 22px;
+	font-size: 14px;
+	color: #000000;
+}
+.CarBox_NumPrice .CarBox_TotialPrice span{
+	margin: 0px;
+	font-size: 14px;
+	float: left;
+}
+
+#shopcarprice{
+	color: #b81c22;
+}
+
+.CarBox_Btn{
+	padding-top: 19px;
+	float: right;
+}
+
+.CarBox_goCar{
+	border: none;
+	height: 32px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 32px;
+	width: 82px;
+	float: right;
+}
+
+.CarBox_goCar a{
+	display: inline-block;
+	height: 32px;
+	width: 82px;
+	background-color:#b81c22 ;
+	color: white;
+	font-family: "宋体";
+}
+
+.CarBox_goCar a:hover{
+	background: #b81c22;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.CarBox_nowCheckout{
+	    width: 84px;
+	    background: url(../img/sprite0725.png) no-repeat scroll -1783px -211px;
+		border: none;
+		height: 32px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 14px;
+		color: #ffffff;
+		text-align: center;
+		line-height: 32px;
+		float: right;
+}
+
+
+.CarBox_nowCheckout a{
+	    display: inline-block;
+	    height: 32px;
+	    width: 84px;
+		background-color: #efefef;
+		font-family: "宋体";
+}
+.CarBox_nowCheckout a:hover{
+	    background: #efefef;
+	    color: #727171;
+		text-decoration: underline;
+}
+
+.CarBox_ProductList{
+	width: 460px;
+	height: auto;
+	margin: 0px 28px;
+}
+
+.CarBox_ProductList h2{
+	width: 445px;
+	height: 32px;
+	line-height: 32px;
+	color: #999999;
+	background-color: white;
+	font-size: 12px;
+}
+
+.CarBox_ProductList li{
+	text-align: center;
+}
+
+.CarBox_ProductListTab li{
+	width: 73px;
+	height: 154px;
+	float: left;
+	display: inline;
+	margin-right: 19px;
+}
+
+.CarBox_ProductListTab li a img{
+	border: 1px solid #b4b4b4;
+}
+.ygmPic img{
+	width: 70px;
+	height: 70px;
+	display: block;
+}
+
+.ygmName{
+	display: inline;
+	word-break: break-all;
+	height: 35px;
+	line-height: 18px;
+	display: block;
+	margin-top: 5px;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: "宋体";
+	color: #000000;
+}
+
+.CarBox_ProductListTab li p{
+	color: #a10000;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
